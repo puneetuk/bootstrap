@@ -1,0 +1,24 @@
+/*
+Custom SASS stylesheet
+*/
+
+.compiled-on:before 
+,body:before
+{
+    white-space: pre;
+    font-family: monospace;	
+	content : current-date("'%d-%m-%y") current-time("%H:%M'") ;
+	position:absolute;
+	right:0;
+	color:grey;
+	opacity:0.3;
+	z-index:999999999;
+}
+
+
+$primary: #FF0000;
+$secondary: #87888C;
+							
+
+.primary{color:$primary;}							
+.secondary{color:$secondary;}
